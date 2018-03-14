@@ -1,5 +1,6 @@
 (function($) {
 
+
   new WOW().init();
 
   jQuery(window).load(function() {
@@ -48,3 +49,22 @@
 	});
 
 })(jQuery);
+
+
+
+$(document).ready(function() {
+  function showAutoDropDownMenu() {
+    if ($(window).width() > 770) {
+      $(".dropdown").hover(
+        function(){ $(this).addClass('open') },
+        function(){ $(this).removeClass('open') }
+    );
+  }
+  
+  }
+  
+      // Execute on load
+      showAutoDropDownMenu();
+   // Bind event listener
+   $(window).resize(showAutoDropDownMenu);
+  });

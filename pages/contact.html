@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Organigramme EMSI</title>
+
+  <!-- Bootstrap Core CSS -->
+  <link href="../css/bootstrap.min.css" rel="stylesheet" type="text/css">
+
+  <!-- Fonts -->
+  <link href="../font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+  <link href="../css/animate.css" rel="stylesheet" />
+  <!-- Squad theme CSS -->
+  <link href="../css/style.css" rel="stylesheet">
+  <link href="../color/default.css" rel="stylesheet">
+  <style>
+    @media (max-width:1160px) {
+      .navbar {
+        padding: 0 0;
+        border-bottom: 0;
+        letter-spacing: 1px;
+        background: 0 0;
+        -webkit-transition: background 0.5s ease-in-out, padding 0.5s ease-in-out;
+        -moz-transition: background 0.5s ease-in-out, padding 0.5s ease-in-out;
+        transition: background 0.5s ease-in-out, padding 0.5s ease-in-out;
+      }
+    }
+
+    .navbar-fixed-top {
+      background: #67b0d1;
+    }
+
+    .loaderImage {
+      width: 100%;
+      height: 100%;
+      text-align: center;
+      display: none;
+    }
+  </style>
+</head>
+
+<body id="page-top" data-spy="scroll" data-target=".navbar-custom">
+
+  <!--Navigation bar-->
+  <nav class="navbar navbar-custom navbar-fixed-top" role="navigation">
+    <div class="container-fluid">
+      <div class="navbar-header page-scroll">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-main-collapse">
+          <i class="fa fa-bars"></i>
+        </button>
+        <a class="navbar-brand" href="../index.html">
+          <h1>Emsi</h1>
+        </a>
+      </div>
+      <!-- Collect the nav links, forms, and other content for toggling -->
+      <div class="collapse navbar-collapse navbar-right navbar-main-collapse">
+        <ul class="nav navbar-nav">
+          <li>
+            <a href="../index.html">Home</a>
+          </li>
+          <li class="dropdown">
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown">Présentation
+              <b class="caret"></b>
+            </a>
+            <ul class="dropdown-menu">
+              <li>
+                <a href="emsi.html">EMSI</a>
+              </li>
+              <li>
+                <a href="motPresident.html">Mot de Président</a>
+              </li>
+              <li>
+                <a href="organigramme.html">Organigramme</a>
+              </li>
+              <li>
+                <a href="lpri.html">LPRI</a>
+              </li>
+              <li>
+                <a href="partenaires.html">Partenaires académiques</a>
+              </li>
+            </ul>
+          </li>
+          <li class="dropdown">
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown">Axes et équipes
+              <b class="caret"></b>
+            </a>
+            <ul class="dropdown-menu">
+              <li>
+                <a href="#">NTIC & WSN</a>
+              </li>
+              <li>
+                <a href="#">Modélisation et Optimisation</a>
+              </li>
+              <li>
+                <a href="#">Systèmes complexes et fiabilité</a>
+              </li>
+              <li>
+                <a href="#">Instrumentations et matériaux</a>
+              </li>
+            </ul>
+          </li>
+          <li>
+            <a href="#about">Innovation & Fablab</a>
+          </li>
+          <li>
+            <a href="#service">Publications et projets</a>
+          </li>
+          <li>
+            <a href="events.html">Evénements organisés</a>
+          </li>
+          <li class="active">
+            <a href="contact.html">Contact</a>
+          </li>
+        </ul>
+      </div>
+      <!-- /.navbar-collapse -->
+    </div>
+    <!-- /.container -->
+  </nav>
+
+
+  <div class="home-section">
+    <div class="heading-contact">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-12">
+            <div class="wow bounceInDown" data-wow-delay="0.1s">
+              <div class="section-heading">
+                <h2>Contact</h2>
+                <hr class="marginbot-50">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container">
+      
+      <div class="row">
+        <div class="col-lg-8 col-md-8">
+          <div class="boxed-grey">
+            <div id="sendmessage">Your message has been sent. Thank you!</div>
+            <div id="errormessage"></div>
+            <div class="loaderImage">
+              <i class="fa fa-spinner fa-spin" style="font-size:64px"></i>
+            </div>
+            <form id="contact-form" action="" method="post" role="form" class="contactForm">
+              <div class="row">
+                <div class="col-md-6">
+                  <div class="form-group">
+                    <label for="name">
+                      Name</label>
+                    <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" data-rule="minlen:4" data-msg="Please enter at least 4 chars"
+                    />
+                    <div class="validation"></div>
+                  </div>
+                  <div class="form-group">
+                    <label for="email">
+                      Email Address</label>
+                    <div class="form-group">
+                      <input type="email" class="form-control" name="email" id="email" placeholder="Your Email" data-rule="email" data-msg="Please enter a valid email"
+                      />
+                      <div class="validation"></div>
+                    </div>
+                  </div>
+                  <div class="form-group">
+                    <label for="subject">
+                      Subject</label>
+                    <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject" data-rule="minlen:4" data-msg="Please enter at least 8 chars of subject"
+                    />
+                    <div class="validation"></div>
+                  </div>
+                </div>
+                <div class="col-md-6">
+                  <div class="form-group">
+                    <label for="name">
+                      Message</label>
+                    <textarea class="form-control" name="message" rows="5" data-rule="required" data-msg="Please write something for us" placeholder="Message"></textarea>
+                    <div class="validation"></div>
+                  </div>
+                </div>
+                <div class="col-md-12">
+                  <button type="submit" class="btn btn-skin pull-right" id="btnContactUs">
+                    Send Message</button>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+
+        <div class="col-lg-4 col-md-4">
+          <div class="widget-contact">
+            <h5>Main Office</h5>
+
+            <address>
+              <strong>EMSI Les orangers.</strong>
+              <br> Boulevard Laymoune, Casablanca
+              <br> Casablanca, Morocco
+              <br>
+              <abbr title="Phone">P:</abbr> (+212) 522 992 323
+            </address>
+
+            <address>
+              <strong>Email</strong>
+              <br>
+              <a href="mailto:#">email.name@emsi.ma</a>
+            </address>
+            <address>
+              <strong>We're on social networks</strong>
+              <br>
+              <ul class="company-social">
+                <li class="social-facebook">
+                  <a href="#" target="_blank">
+                    <i class="fa fa-facebook"></i>
+                  </a>
+                </li>
+                <li class="social-twitter">
+                  <a href="#" target="_blank">
+                    <i class="fa fa-twitter"></i>
+                  </a>
+                </li>
+                <li class="social-dribble">
+                  <a href="#" target="_blank">
+                    <i class="fa fa-dribbble"></i>
+                  </a>
+                </li>
+                <li class="social-google">
+                  <a href="#" target="_blank">
+                    <i class="fa fa-google-plus"></i>
+                  </a>
+                </li>
+              </ul>
+            </address>
+
+          </div>
+        </div>
+      </div>
+      <div class="row">
+          <div class="col-md-12">
+            <div class="mapEmsi" id="map">My map will go here</div>
+          </div>
+        </div>
+    
+    </div>
+  </div>
+
+  <footer>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12 col-lg-12">
+          <p>&copy;EMSI. All rights reserved.</p>
+          <div class="credits">
+            <a href="https://bootstrapmade.com/bootstrap-one-page-templates/">Bootstrap One Page Templates</a> by BootstrapMade
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Core JavaScript Files -->
+  <script src="../js/jquery.min.js"></script>
+  <script src="../js/bootstrap.min.js"></script>
+  <script src="../js/jquery.easing.min.js"></script>
+  <script src="../js/jquery.scrollTo.js"></script>
+  <script src="../js/wow.min.js"></script>
+  <!-- Custom Theme JavaScript -->
+  <script src="../js/custom.js"></script>
+  <script src="../js/contactform.js"></script>
+
+  <script>
+    var marker;
+    function myMap() {
+      var myLatlng = new google.maps.LatLng(33.541497, -7.673548)
+      var mapProp = {
+        center: myLatlng,
+        animation: google.maps.Animation.DROP,
+        zoom: 16
+      };
+      marker = new google.maps.Marker({
+        position: myLatlng,
+        title: "EMSI Les orangers  - Casablanca Morocco",
+        icon: '../img/marker.png'
+      });
+var infowindow = new google.maps.InfoWindow({
+    content: "<span> <b>EMSI</b> Les orangers</span>"
+});
+
+marker.setAnimation(google.maps.Animation.BOUNCE);
+
+
+google.maps.event.addListener(marker, 'click', function() {
+  infowindow.open(map,marker);
+});
+      var map = new google.maps.Map(document.querySelector("#map"), mapProp);
+      marker.setMap(map);
+    }
+  </script>
+  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAvvNmI2rtCpaYgnosXPGXcv7xLXqseOpQ&callback=myMap"></script>
+</body>
+
+</html>
