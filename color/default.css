@@ -6,6 +6,10 @@ a,.tp-caption a.btn:hover {
 	background: #67b0d1;
 }
 
+.color-icon{
+	color: #67b0d1;
+}
+
 
 @media (max-width: 768px) {
   .navbar, .navbar-nav {

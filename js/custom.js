@@ -62,7 +62,6 @@ $(document).ready(function() {
   }
   
   }
-  
       // Execute on load
       showAutoDropDownMenu();
    // Bind event listener
